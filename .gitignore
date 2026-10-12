@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# App runtime artifacts (user-specific, never commit)
+config.json
+weaver_history.json
+*.log
+
+# PyInstaller build output
+dist/
+build/
+*.spec.bak
+
+# Test / sample outputs
+test_output/
+
+# Reference / personal media
+ref.jpg
+*.pkl
+
+# macOS / Windows junk
+.DS_Store
+._*
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
