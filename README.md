@@ -2,7 +2,30 @@
 
 A desktop app for bulk-creating short vertical videos (Reels/Shorts/TikTok) from a folder of photos and a folder of music — plus a one-click audio extractor. Point it at your media, hit start, and get a batch of finished clips.
 
-![Python](https://img.shields.io/badge/python-3.9%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey)
+
+## Contents
+
+- [Screenshots](#screenshots)
+- [What it does](#what-it-does)
+- [Install](#install)
+- [AI text overlay (optional)](#ai-text-overlay-optional)
+- [Building a standalone binary](#building-a-standalone-binary)
+- [Project layout](#project-layout)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Screenshots
+
+> Screenshots coming soon — the app in action speaks louder than words.
+
+<!--
+To add screenshots:
+1. Drop PNGs into docs/screenshots/
+2. Reference them here, e.g.:
+   ![Photo Weaver tab](docs/screenshots/weaver-tab.png)
+   ![Audio Extractor tab](docs/screenshots/extractor-tab.png)
+-->
 
 ## What it does
 
@@ -26,7 +49,7 @@ A desktop app for bulk-creating short vertical videos (Reels/Shorts/TikTok) from
 | Ubuntu/Debian | `sudo apt install ffmpeg` |
 | Windows | Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH |
 
-**2. Set up Python:**
+**2. Set up Python** (3.9+):
 
 ```bash
 python -m venv venv
@@ -82,6 +105,15 @@ utils.py          # file discovery, OpenCV helpers, text rendering
 settings.py       # config.json load/save with safe defaults
 config.example.json  # template for your own config.json (git-ignored)
 ```
+
+## Contributing
+
+Pull requests are welcome. A few ground rules:
+
+- Keep it dependency-light — think twice before adding a new package.
+- No secrets in code, ever. API keys come from the environment.
+- No hardcoded paths. Everything user-specific belongs in settings.
+- Match the existing style: docstrings, type hints, background threads for anything slow.
 
 ## License
 
